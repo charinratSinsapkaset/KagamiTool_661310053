@@ -31,30 +31,30 @@ class MirrorDialog(QtWidgets.QDialog):
 
 		# === X Axis ===
 		self.x_layout = QtWidgets.QHBoxLayout()
-		self.plusX_btn = self.makeIconButton('K_plusX.png', '+X')
-		self.minusX_btn = self.makeIconButton('K_minusX.png', '-X')
+		self.plusX_btn = self.makeIconButton('plusX.png', '+X')
+		self.minusX_btn = self.makeIconButton('minusX.png', '-X')
 		self.x_layout.addWidget(self.plusX_btn)
 		self.x_layout.addWidget(self.minusX_btn)
 		self.main_layout.addLayout(self.x_layout)
 
 		# === Y Axis ===
 		self.y_layout = QtWidgets.QHBoxLayout()
-		self.plusY_btn = self.makeIconButton('K_plusY.png', '+Y')
-		self.minusY_btn = self.makeIconButton('K_minusY.png', '-Y')
+		self.plusY_btn = self.makeIconButton('plusY.png', '+Y')
+		self.minusY_btn = self.makeIconButton('minusY.png', '-Y')
 		self.y_layout.addWidget(self.plusY_btn)
 		self.y_layout.addWidget(self.minusY_btn)
 		self.main_layout.addLayout(self.y_layout)
 
 		# === Z Axis ===
 		self.z_layout = QtWidgets.QHBoxLayout()
-		self.plusZ_btn = self.makeIconButton('K_plusZ.png', '+Z')
-		self.minusZ_btn = self.makeIconButton('K_minusZ.png', '-Z')
+		self.plusZ_btn = self.makeIconButton('plusZ.png', '+Z')
+		self.minusZ_btn = self.makeIconButton('minusZ.png', '-Z')
 		self.z_layout.addWidget(self.plusZ_btn)
 		self.z_layout.addWidget(self.minusZ_btn)
 		self.main_layout.addLayout(self.z_layout)
 
 		# === Done Clean Button ===
-		self.clean_btn = QtWidgets.QPushButton(QtGui.QIcon(os.path.join(ICON_PATH, 'K_DoneClean.png')), 'CleanMirror!')
+		self.clean_btn = QtWidgets.QPushButton(QtGui.QIcon(os.path.join(ICON_PATH, 'Clean.png')), 'CleanMirror!')
 		self.clean_btn.setStyleSheet('''
 			QPushButton {
 				background-color: #777;
