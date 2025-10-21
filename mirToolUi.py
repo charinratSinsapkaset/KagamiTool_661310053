@@ -23,7 +23,7 @@ class MirrorDialog(QtWidgets.QDialog):
 		# === Style ===
 		self.setStyleSheet('''
 			background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
-				stop:0 #104E8B, stop:1 #A4D3EE);
+				stop:0 #104E8B, stop:1 #104E8B);
 		''')
 
 		# === Main layout ===
